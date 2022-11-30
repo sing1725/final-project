@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERIC STYLES */
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /* this is lem */
+    line-height: 1.5;
+    color: black;
+}
+
+h1 {
+    font-size: 71px;
+    line-height: 106px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 1em;
+    /* font-size is 14, so 1em = 14px */
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+nav {
+    background: #222222;
+}
+
+.container {
+    padding: 1em;    
+}
+
+.logo {
+    background: #c78b07;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav a:link,
+nav a:visited {
+    font-size: 18px;
+    color: #c78b07;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+nav .current a:link,
+nav .current a:visited {
+    color:black;
+    background: #c78b07;
+}
+
+/* SECTION-SPECIFIC STYLES */
+
+/* WELCOME SECTION */
+
+.header-image {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.header-image .container{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* ABOUT SECTION*/
+
+.section-about {
+    background-color: #ffe6ac; ;
+}
+
+/*DESKTOP STYLES*/
+
+@media screen and (min-width: 1168px) {
+    
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+}
