@@ -140,14 +140,20 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* font used for the web page */
+
 header {
     background-color: #c78c06;
 }
+
+/* background colour of the header */
 
 nav {
     width: 100%;
     text-align: center;
 }
+
+/* width of navigation bar which is 100% and twxt is aligned at center  */
 
 nav a {
     background-color: #222;
@@ -157,19 +163,27 @@ nav a {
     text-decoration: none;
 }
 
+/* additional stuff on navigation bar by background colour being black and padding with 12 pixels  */
+
 nav a:hover {
     background-color: #c78c06;
     color: #222;
 }
+
+/* specifically targeting hover in navigation bar  */
 
 nav a.home {
     background-color: #c78c06;
     color: #222;
 }
 
+/* home section in navigation bar is been targeted showcasing background colour and color black */
+
 .search-head {
     color: #222;
 }
+
+/* search section with the color black */
 
 .searchIcon input[type=text] {
     padding: 10px;
@@ -178,6 +192,8 @@ nav a.home {
     font-size: 14px;
 }
 
+/* search icon attributes with the padding of 10 pixels width of 85% with the font size of 14 pixels */
+
 .fa-magnifying-glass {
     color: #c78c06;
     background: #222;
@@ -185,15 +201,21 @@ nav a.home {
     font-size: 17px;
 }
 
+/* magnifying glass of search bar option is been targated here with the some colours used before  */
+
 .searchIcon {
     display: flex;
     padding: 1rem;
     background-color: #222;
 }
 
+/* search icon with the padding and background colour being black */
+
 .searchIcon:hover {
     cursor: pointer;
 }
+
+/* hover tag select the elements in the searchicons */
 
 .submitButton {
     background-color: transparent;
@@ -201,13 +223,19 @@ nav a.home {
     border: 1px solid #c78c06;
 }
 
+/* submit button for the searchbar while the bckground color is transparent with the border being 1 pixels solid and the same colour used earlier */
+
 .header-with-image img {
     width: 100%;
 }
 
+/* header image with the width of 100% */
+
 .header-with-image {
     position: relative;
 }
+
+/* positioning of the image  */
 
 .welcome {
     display: block;
@@ -218,11 +246,15 @@ nav a.home {
     position: absolute;
 }
 
+/* welcome part on the web page with its attributes  */
+
 .welcome h1 {
     font-size: 3rem;
     padding: 10px 5px 10px 5px;
     font-weight: 700;
 }
+
+/*h1 section of welcome  */
 
 .welcome p {
     line-height: 1rem;
@@ -231,12 +263,15 @@ nav a.home {
     font-weight: 300;
 }
 
+/* paragraph of welcome section showcasing the line-height of 1rem and font size and font weight */
+
 .connect-button {
     margin-left: .7rem;
     padding: 1.5rem;
     background-color: #c78c06;
     width: 28%;
 }
+/* connect button on the web page at left side with padding of 1.5rem and width of 28%  */
 
 .connect-button a {
     font-size: 1rem;
@@ -244,6 +279,8 @@ nav a.home {
     color: black;
     font-weight: 500;
 }
+
+/* connect us button section showcasing font size and font weight while the colour is black */
 
 .connect-button i {
     font-size: 1rem;
@@ -255,25 +292,34 @@ nav a.home {
     background-color: #ffe6ac;
     padding: 10px;
 }
+/* about section of the web page with the respective color */
 
 .about h2 {
     font-size: 2rem;
     font-weight: 700;
     padding: 0px 0px 10px 0px;
 }
+/* h2 part of about section which include font-size and font-weight  */
 
 .about img {
     width: 100%;
     padding-bottom: 10px
 }
+
+/* image used at about us section  */
+
 .about p {
     font-size: 12px;
     padding-bottom: 10px;
 }
 
+/* paragraph at about us section with the font-size of 12px  */
+
 .services {
     padding: 10px;
 }
+
+/* services section with the padding of 10 pixels*/
 
 .services h2 {
     font-size: 2.5rem;
@@ -281,11 +327,15 @@ nav a.home {
     padding: 10px 5px;
 }
 
+/* h2 section attributes in service section showcasing the font-size and font-weight */
+
 .digital {
     background-color: #ffe6ac;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
+/* digital section with the background-color as mentioned with both padding margin tag bootom at 10 pixels and 20 pixels respectively */
 
 
 .digital p {
@@ -293,16 +343,22 @@ nav a.home {
     font-size: 12px;
 }
 
+/* paragraph section of digital part showcasing the padding having 10 pixels and font-size with 12 pixels */
+
 .digital img {
     width: 100%;
     padding-bottom: 20px;
 }
+
+/* image used in digital section with the width of 100% */
 
 .digital h3 {
     font-size: 2.4rem;
     font-weight: 700;
     padding: 10px;
 }
+
+/* h3 section of digital with the attributes of font size and font weight  */
 
 .service-button {
     background-color: #222;
@@ -311,6 +367,8 @@ nav a.home {
     font-size: 16px;
     margin: 0.5rem;
 }
+
+/* service button on the web page showcasing the background color with the padding 0f 30 pixels and the width of 120 px */
 
 .service-button a,
 i {
@@ -323,10 +381,14 @@ i {
     padding-bottom: 20px;
 }
 
+/* image used in marketing section  */
+
 .marketing p {
     font-size: 12px;
     padding: 10px;
 }
+
+/* paragraph part of marketing section */
 
 .marketing {
     background-color: #ffe6ac;
@@ -346,10 +408,14 @@ i {
     margin-bottom: 20px;
 }
 
+/* video section with the respective background color  */
+
 .video img {
     width: 100%;
     padding-bottom: 20px;
 }
+
+/* image used in video section */
 
 .video h3 {
     font-size: 2.2rem;
@@ -368,9 +434,13 @@ i {
     margin-bottom: 20px;
 }
 
+/* web section with the respective background color */
+
 .web img {
     width: 100%;
 }
+
+/* image used in web section  */
 
 .web h3 {
     font-size: 2rem;
@@ -391,9 +461,13 @@ i {
     margin-bottom: 20px;
 }
 
+/* print section with its respective background color  */
+
 .print img {
     width: 100%;
 }
+
+/* image used in print section  */
 
 .print h3 {
     font-size: 2.2rem;
@@ -411,6 +485,8 @@ i {
     height: 200px;
     object-fit: cover;
 }
+
+/* image used in vision section  */
 
 .vision {
     position: relative;
@@ -444,6 +520,8 @@ i {
     font-size: 12px;
 }
 
+/* learn-button with the repective background color with the appropriate width and border  */
+
 .learn-button a,i {
     text-decoration: none;
     color: white;
@@ -452,6 +530,7 @@ i {
 .team {
     padding: 10px
 }
+
 
 .team h2 {
     font-size: 2.5rem;
@@ -524,11 +603,15 @@ hr {
     font-size: 18px;
 }
 
+/* form input with the appropriatebwidth and font-size */
+
 .formmessageinput {
     width: 100%;
     font-size: 18px;
     height: 120px;
 }
+
+/* form message input with the correct width, font-size and height */
 
 .formbutton {
     background-color: black;
@@ -537,10 +620,14 @@ hr {
     font-size: 18px;
 }
 
+/* formbuuton with the background color being black and padding with 2 pixels */
+
 .hours h3 {
     font-size: 2rem;
     font-weight: 700;
 }
+
+/*  */
 
 table td {
     padding: 15px;
