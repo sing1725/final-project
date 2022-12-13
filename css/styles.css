@@ -129,19 +129,3 @@ nav .current a:visited {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-/* ABOUT SECTION*/
-
-.section-about {
-    background-color: #ffe6ac; ;
-}
-
-/*DESKTOP STYLES*/
-
-@media screen and (min-width: 1168px) {
-    
-    .container {
-        width: 1140px;
-        margin: 0 auto;
-    }
-}
