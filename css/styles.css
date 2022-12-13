@@ -3,129 +3,877 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-/* GENERIC STYLES */
+/* CSS RESET */
 
-body {
-    background: white;
+html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px; /* this is lem */
-    line-height: 1.5;
-    color: black;
 }
 
-h1 {
-    font-size: 71px;
-    line-height: 106px;
-    font-weight: bold;
-    margin-bottom: 18px;
-}
-
-h2 {
-    font-size: 48px;
-    line-height: 1.5;
-    font-weight: bold;
-    margin-bottom: 12px;
-}
-
-p {
-    margin-bottom: 1em;
-    /* font-size is 14, so 1em = 14px */
-}
-
-img {
-    max-width: 100%;
-    height:auto;
+header {
+    background-color: #c78c06;
 }
 
 nav {
-    background: #222222;
+    width: 100%;
+    text-align: center;
 }
 
-.container {
-    padding: 1em;    
+nav a {
+    background-color: #222;
+    color: #c78c06;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
 }
 
-.logo {
-    background: #c78b07;
-    padding-top: 20px;
+nav a:hover {
+    background-color: #c78c06;
+    color: #222;
+}
+
+nav a.home {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.search-head {
+    color: #222;
+}
+
+.searchIcon input[type=text] {
+    padding: 10px;
+    width: 85%;
+    border: none;
+    font-size: 14px;
+}
+
+.fa-magnifying-glass {
+    color: #c78c06;
+    background: #222;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.searchIcon {
+    display: flex;
+    padding: 1rem;
+    background-color: #222;
+}
+
+.searchIcon:hover {
+    cursor: pointer;
+}
+
+.submitButton {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #c78c06;
+}
+
+.header-with-image img {
+    width: 100%;
+}
+
+.header-with-image {
+    position: relative;
+}
+
+.welcome {
+    display: block;
+    bottom: 10%;
+    background-color: rgba(34, 34, 34, 0.651);
+    top: 10%;
+    color: white;
+    position: absolute;
+}
+
+.welcome h1 {
+    font-size: 3rem;
+    padding: 10px 5px 10px 5px;
+    font-weight: 700;
+}
+
+.welcome p {
+    line-height: 1rem;
+    padding: 10px;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.connect-button {
+    margin-left: .7rem;
+    padding: 1.5rem;
+    background-color: #c78c06;
+    width: 28%;
+}
+
+.connect-button a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.connect-button i {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.about {
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0px 0px 10px 0px;
+}
+
+.about img {
+    width: 100%;
+    padding-bottom: 10px
+}
+.about p {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.services {
+    padding: 10px;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 10px 5px;
+}
+
+.digital {
+    background-color: #ffe6ac;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.digital p {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.digital img {
+    width: 100%;
     padding-bottom: 20px;
 }
 
-nav a:link,
-nav a:visited {
-    font-size: 18px;
-    color: #c78b07;
-    text-align: center;
-    display: block;
+.digital h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.service-button {
+    background-color: #222;
+    padding: 30px;
+    width: 120px;
+    font-size: 16px;
+    margin: 0.5rem;
+}
+
+.service-button a,
+i {
     text-decoration: none;
-    padding-top: 17px;
-    padding-bottom: 17px;
-}
-
-nav .current a:link,
-nav .current a:visited {
-    color:black;
-    background: #c78b07;
-}
-
-/* SECTION-SPECIFIC STYLES */
-
-/* WELCOME SECTION */
-
-.header-image {
-    background-image: url(../images/main-banner.jpg);
-    background-size: cover;
-    padding-top: 68px;
-    padding-bottom: 68px;
-}
-
-.header-image .container{
-    background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
+
+.marketing img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.marketing p {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.marketing {
+    background-color: #ffe6ac;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.marketing h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.video {
+    background-color: #ffe6ac;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.video img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.video h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.video p {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.web {
+    background-color: #ffe6ac;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.web img {
+    width: 100%;
+}
+
+.web h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.web p {
+    padding: 10px;
+    font-size: 12px;
+    font-size: 12px;
+}
+
+
+.print {
+    background-color: #ffe6ac;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.print img {
+    width: 100%;
+}
+
+.print h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.print p {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.vision img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.vision {
+    position: relative;
+}
+
+.ourvision {
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
+    color: white;
+    padding: 10px;
+}
+
+.ourvision h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.ourvision p {
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.learn-button {
+    background-color: rgba(34, 34, 34, 0.498);
+    padding: 20px;
+    width: 80px;
+    border: 0.5px solid #c78c06;
+    font-size: 12px;
+}
+
+.learn-button a,i {
+    text-decoration: none;
+    color: white;
+}
+
+.team {
+    padding: 10px
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.john {
+    padding-bottom: 10px;
+}
+
+.bob {
+    padding-bottom: 10px;
+}
+
+.team img {
+    width: 100%;
+}
+
+hr {
+    color: #c78c06;
+    border: 1px solid #c78c06;
+}
+
+.about-team {
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.about-team h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.about-team h6 {
+    font-weight: 600;
+}
+
+.about-team p {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.contact {
+    padding: 1rem;
+
+}
+
+.contact h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 20px 1px;
+}
+
+.hours {
+    width: 100%;
+}
+
+
+.contact h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.forminput {
+    width: 100%;
+    font-size: 18px;
+}
+
+.formmessageinput {
+    width: 100%;
+    font-size: 18px;
+    height: 120px;
+}
+
+.formbutton {
+    background-color: black;
+    color: #c78c06;
+    padding: 2px;
+    font-size: 18px;
+}
+
+.hours h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+table td {
+    padding: 15px;
+    border: 0.5px solid black;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 10px;
+}
+
+table tr th {
+    background-color: #ffe6ac;
+    text-align: center;
+    padding: 15px;
+    border: 0.5px solid black;
+}
+
+.location {
+    padding: 1rem;
+}
+
+.location h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.location iframe {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    color: #c78c06;
+    background-color: #222;
+    padding: 20px 10px 10px 10px;
+}
+
+footer a {
+    color: #c78c06;
+    text-decoration: none;
+}
+
+footer p {
+    color: #c78c06;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 760px) {
+    
+    .headhold {
+        width: 80%;
+        display: flex;
+        max-width: 1200px;
+    }
+
+    header {
+        background-color: #222;
+        width: 100%;
+        padding: 30px 10%;
+        display: inline-block;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .headhold {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    nav ul li {
+        text-decoration: none;
+        margin: auto;
+        color: #c78c06;
+        display: inline-block;
+        justify-content: space-between;
+    }
+
+    nav a {
+        padding: 20px;
+    }
+
+    nav a:hover {
+        background-color: #c78c06;
+        color: #222;
+    }
+
+    nav a.home {
+        background-color: #c78c06;
+        color: #222;
+    }
+
+    .search-head {
+        display: inline-block;
+        justify-content: space-around;
+    }
+
+    .searchIcon input {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .fa-magnifying-glass {
+        color: #c78c06;
+        background-color: #222;
+        padding: 15px;
+        border: none;
+    }
+
+    .welcome-holder {
+        width: 80%;
+        max-width: 1200px;
+        background-color: #222;
+        margin: auto;
+    }
+    
+    .welcome-holder img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        position: relative;
+    }
+
+
+    .welcome {
+        position:absolute;
+    }
+
+    .welcome {
+        display: block;
+        width: 80%;
+        max-width: 1200px;
+        background-color: rgba(34, 34, 34, 0.651);
+        color: white;
+    }
+
+    .welcome h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    .welcome p {
+        font-size: 1.3rem;
+        font-weight: 300;
+        padding: 10px;
+        line-height: 1.5rem;
+    }
+
+    .connect-button {
+        padding: 30px;
+        width: 180px;
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    .about-img{
+        grid-area: a1;
+    }
+
+    .aboutus{
+        grid-area: a2;
+    }
+
+    .about-holder{
+        display: grid;
+        grid-template-areas: 'a1 a2';
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .aboutus {
+            margin-left: 1rem;
+    }
+
+    .aboutus p{
+        font-size: 1.1rem;
+    }
+
+    .aboutus h2{
+        font-size: 3rem;
+    }
+    
+    .services {
+        padding: 10px;
+    }
+
+    .service-holder {
+        width: 80%;
+        max-width: 1200px;
+        align-items: center;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 10px;
+    }
+
+
+    .servicegrid1{
+        display: grid;
+        grid-template-areas: 
+        's1 s2';
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .servicegrid2{
+        display: grid;
+        grid-template-areas: 
+        's3 s4 s5';
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .servicegrid2 .service-button{
+        width: 75%;
+        text-align: center;
+    }
+
+    .servicegrid1 .service-button{
+        width: 85%;
+        text-align: center;
+    }
+
+    .digital {grid-area: s1;}
+    .marketing {grid-area: s2;}
+    .video {grid-area: s3;}
+    .web {grid-area: s4;}
+    .print {grid-area: s5;}
+
+    .servicebox p{
+        font-size: 0.9rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .service-button h3{
+        padding: 0.5rem 0.2rem;
+    }
+
+    .vision img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .vision-holder {
+        width: 80%;
+        max-width: 1200px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .vision {
+        position: relative;
+    }
+
+    .team {
+        padding: 10px
+    }
+
+    .team-holder {
+        width: 80%;
+        max-width: 1200px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .teamgrid{
+        display: grid;
+        grid-template-columns: repeat(2,1 fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        't1 t2'
+        't3 t4';
+    }
+
+    .johnpic{
+        grid-area: t1;
+    }
+
+    .aboutjohn{
+        grid-area: t2;
+    }
+
+    .bobpic{
+        grid-area: t4;
+    }
+
+    .aboutbob{
+        grid-area: t3;
+    }
+    
+    .contact-holder {
+        width: 80%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .contactbox{
+        grid-area: c1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .location{
+        grid-area: c2;
+        width: 100%;
+    }
+
+    .hours{
+        grid-area: c3;
+    }
+
+    .contactgrid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        'c1 c1 c2 c2'
+        'c3 c3 c3 c3';
+        gap: 1rem;
+    }
+    
 }
